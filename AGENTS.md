@@ -39,3 +39,9 @@ Docs: https://docs.expo.dev/eas/index.md
 - If `ios/` and `android/` directories do not exist, they are generated (Continuous Native Generation). Never create or edit them by hand — configure native behavior in `app.json` and config plugins.
 - Expo Go only includes its bundled native modules. After adding a library with native code, the app needs a development build: `npx expo run:ios|android` locally, or `eas build --profile development`.
 - Prefer recommended Expo modules over third-party libraries, and check your available skills before adding dependencies. Docs: https://docs.expo.dev/versions/latest/index.md
+
+## Styling and Code Changes
+
+- Use NativeWind `className` utilities for React Native layout and visual styling. Use inline `style` only for values that are dynamic or required by a third-party component.
+- Before editing application code, read this file and any more specific `AGENTS.md` that applies to the target file.
+- Keep code straightforward and use clear names so the behavior is easy to follow.
